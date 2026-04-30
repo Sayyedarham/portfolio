@@ -567,7 +567,18 @@
     transition: transform 0.2s;
   }
   .contact-link-item:hover .contact-link-arrow { transform: translate(3px,-3px); }
+  
+  .btn-download {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: underline;
+  opacity: 0.7;
+  transition: 0.2s;
+}
 
+.btn-download:hover {
+  opacity: 1;
+}
   /* FOOTER */
   footer {
     padding: 2rem 3rem;
@@ -633,13 +644,20 @@
 <!-- HERO -->
 <section class="hero" id="home" style="border-bottom:1px solid var(--border)">
   <div class="hero-left">
-    <div class="hero-tag">Available for Internship</div>
+    <div class="hero-tag">Available for Jobs/Projects</div>
     <h1>Sayyed<br/><em>Arham</em><br/>Ali</h1>
     <p class="hero-desc">
       CS undergraduate building full-stack systems, AI pipelines, and data-driven products. Proficient in Java, C/C++, Python, and React — from REST APIs to LLM agents.
     </p>
     <div class="hero-actions">
-      <a class="btn-primary" href="mailto:sayyedarhamali@gmail.com">Get in Touch →</a>
+      <!-- Resume -->
+      <a class="btn-primary" href="resume.pdf" target="_blank">📄 Resume</a>
+
+      <!-- Optional subtle download -->
+      <a class="btn-download" href="resume.pdf" download>Download</a>
+
+      <!-- Existing CTAs -->
+      <a class="btn-ghost" href="mailto:sayyedarhamali@gmail.com">Hire Me →</a>
       <a class="btn-ghost" href="https://github.com/Sayyedarham" target="_blank">GitHub ↗</a>
       <a class="btn-ghost" href="https://www.linkedin.com/in/sayyed-arham-ali" target="_blank">LinkedIn ↗</a>
     </div>
